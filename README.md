@@ -1,1 +1,55 @@
 # Gym-Calculations-by-Za8-Aqil
+//This Programme is about my Gymmmmm :)
+// Example program
+#include <iostream>
+#include <string>
+#include <iomanip>
+#define kids 20
+#define adults 50
+
+using namespace std;
+
+
+int main()
+{
+    int choice; int months;int total;
+    cout<<"How many months do you plan to join the Gym for?\n";
+    cin>>months;
+    do{
+cout<<setw(10);
+cout<<"\n\nThis is a Gym Menu\n";
+cout<<"Please enter your choice\n";
+cout<<"1.Kids Gym\n";
+cout<<"2.Adults Gym\n";
+cout<<"3.Senior Citizen Gym\n";
+cout<<"4.Exit The Menu\n\n";
+cout<<"Please enter your choice for this menu\n";
+cin>> choice;
+//for switch cases
+switch (choice)
+{
+    case 1:cout<<"Kids Gym\n";
+    cout<<"Rm" <<months* kids;
+    break;
+    
+    case 2:cout<<"Adults Gym\n";
+    cout<<"Rm" <<months*adults;
+    break;
+    
+    case 3: cout <<"Senior Citizen Gym\n";
+    cout<<"Its Free Mate!";
+    break;
+    
+    case 4: cout <<"Exit the menu\n";
+    break;
+    default: cout <<"Please Enter number between 1-3.\n";
+}
+
+
+}while (choice!=4);
+return 0;
+}
+
+
+
+    
